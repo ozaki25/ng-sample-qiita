@@ -1,2 +1,3 @@
 <h2>qiita-comments works!</h2>
-<p *ngFor="let comment of comments">{{ comment.body }}</p>
+<a routerLink="/comments/new">New Comment</a>
+<p *ngFor="let comment of comments">{{ comment.body }} {{ comment.user.id }}</p>
