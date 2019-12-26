@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { QiitaCommentService } from '../qiita-comment.service';
+import { QiitaComment } from '../qiita-comment';
 
 @Component({
   selector: 'app-qiita-comments',
@@ -6,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./qiita-comments.component.scss'],
 })
 export class QiitaCommentsComponent implements OnInit {
-  constructor() {}
+  comments: QiitaComment[] = [];
 
-  ngOnInit() {}
+  constructor(private qiitaCommentService: QiitaCommentService) {}
+
+  ngOnInit() {
+    this.getComments();
+  }
+
+  getComments(): void {
+    this.qiitaCommentService
+      .getComments()
+      .subscribe(comments => (this.comments = comments));
+  }
 }
