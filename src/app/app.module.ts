@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { QiitaCommentsComponent } from './qiita-comments/qiita-comments.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, QiitaCommentsComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
