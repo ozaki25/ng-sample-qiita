@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QiitaCommentsComponent } from './qiita-comments/qiita-comments.component';
 import { QiitaNewCommentComponent } from './qiita-new-comment/qiita-new-comment.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { QiitaNewCommentComponent } from './qiita-new-comment/qiita-new-comment.
     QiitaCommentsComponent,
     QiitaNewCommentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
