@@ -3,5 +3,6 @@ export class QiitaComment {
   body: string;
   user: {
     id: string;
+    profile_image_url: string;
   };
 }
