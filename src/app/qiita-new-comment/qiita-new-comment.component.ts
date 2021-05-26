@@ -18,7 +18,7 @@ export class QiitaNewCommentComponent implements OnInit {
 
   ngOnInit() {}
 
-  save(e): void {
+  save(e: any): void {
     e.preventDefault();
     this.qiitaCommentService
       .create(this.comment)

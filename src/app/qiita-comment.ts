@@ -1,4 +1,4 @@
-export class QiitaComment {
+export interface QiitaComment {
   id: string;
   body: string;
   user: {
