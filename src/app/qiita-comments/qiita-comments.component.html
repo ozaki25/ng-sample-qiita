@@ -1,5 +1,5 @@
 <h2>qiita-comments works!</h2>
-<a routerLink="/comments/new">New Comment</a>
+<app-link href="/comments/new" text="New Comment"></app-link>
 <mat-card *ngFor="let comment of comments" class="card">
   <mat-card-header>
     <img mat-card-avatar src="{{ comment.user.profile_image_url }}" />
